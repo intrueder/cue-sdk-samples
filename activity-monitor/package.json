@@ -1,0 +1,21 @@
+{
+  "name": "activity-monitor",
+  "version": "1.0.0",
+  "description": "CPU activity monitor",
+  "main": "app.js",
+  "scripts": {
+    "postinstall": "electron-builder install-app-deps",
+    "start": "electron app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cue-sdk": "^0.1.0"
+  },
+  "devDependencies": {
+    "yarn": "1.13.0",
+    "electron": "2.0.17",
+    "electron-builder": "20.38.5"
+  }
+}
