@@ -11,11 +11,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cue-sdk": "^0.1.0"
+    "cue-sdk": "1.0.0"
   },
   "devDependencies": {
-    "yarn": "1.13.0",
-    "electron": "2.0.17",
-    "electron-builder": "20.38.5"
+    "yarn": "1.17.3",
+    "electron": "6.0.0",
+    "electron-builder": "21.2.0"
   }
 }
