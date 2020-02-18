@@ -1,6 +1,6 @@
 {
   "name": "activity-monitor",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "CPU activity monitor",
   "main": "app.js",
   "scripts": {
@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cue-sdk": "1.0.0"
+    "cue-sdk": "1.1.0"
   },
   "devDependencies": {
     "yarn": "1.22.0",
