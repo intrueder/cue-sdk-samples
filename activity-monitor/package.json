@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "postinstall": "electron-builder install-app-deps",
-    "start": "electron app.js"
+    "start": "electron app.js",
+    "dist": "electron-builder"
   },
   "keywords": [],
   "author": "",
