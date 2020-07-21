@@ -1,6 +1,6 @@
 # cue-sdk node/electron samples
 
-Sample Node/Electron applications that use [cue-sdk](https://github.com/intrueder/cue-sdk)
+Sample Node/Electron applications that use [cue-sdk](https://github.com/CorsairOfficial/cue-sdk-node)
 
 ## Getting Started
 
