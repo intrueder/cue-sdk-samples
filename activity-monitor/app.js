@@ -1,4 +1,4 @@
-const {app, BrowserWindow} = require('electron')
+const { app, BrowserWindow } = require('electron')
 const path = require('path')
 const url = require('url')
 
@@ -8,10 +8,8 @@ let window = null
 app.once('ready', () => {
   // Create a new window
   window = new BrowserWindow({
-    // Set the initial width to 500px
-    width: 500,
-    // Set the initial height to 400px
-    height: 400,
+    width: 800,
+    height: 600,
     // set the title bar style
     titleBarStyle: 'hiddenInset',
     // set the background color to black
@@ -20,15 +18,12 @@ app.once('ready', () => {
     show: false,
 
     webPreferences: {
-      nodeIntegration: true
+      nodeIntegration: true,
+      preload: path.join(__dirname, "preload.js")
     }
   })
 
-  window.loadURL(url.format({
-    pathname: path.join(__dirname, 'index.html'),
-    protocol: 'file:',
-    slashes: true
-  }))
+  window.loadURL('file:///' + path.join(__dirname, 'index.html'))
 
   window.once('ready-to-show', () => {
     window.show()

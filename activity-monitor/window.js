@@ -1,7 +1,5 @@
-const os = require('os')
-const sdk = require('cue-sdk')
-var chart = null;
-var lastMeasureTimes = [];
+let chart = null;
+const lastMeasureTimes = [];
 
 console.log(sdk.CorsairPerformProtocolHandshake());
 
@@ -40,7 +38,7 @@ function setLastMeasureTimes(cpus) {
 
 function getDatasets() {
   const datasets = []
-  const cpus = os.cpus();
+  const cpus = os_cpus();
 
   for (let i = 0; i < cpus.length; i++) {
     const cpu = cpus[i]
@@ -59,7 +57,7 @@ function getDatasets() {
 }
 
 function updateDatasets() {
-  const cpus = os.cpus()
+  const cpus = os_cpus()
   for (let i = 0; i < cpus.length; i++) {
     const cpu = cpus[i];
     chart.data.datasets[i].data = getCpuTimes(cpu);
@@ -122,6 +120,6 @@ function drawChart() {
 }
 
 $(() => {
-  setLastMeasureTimes(os.cpus());
+  setLastMeasureTimes(os_cpus());
   drawChart();
 })
