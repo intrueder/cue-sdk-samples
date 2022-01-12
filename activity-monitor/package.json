@@ -12,10 +12,10 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "cue-sdk": "2.1.0"
+    "cue-sdk": "2.2.0"
   },
   "devDependencies": {
-    "electron": "13.1.1",
+    "electron": "13.3.0",
     "electron-builder": "22.10.5",
     "yarn": "1.22.10"
   }
