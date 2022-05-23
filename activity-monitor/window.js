@@ -4,7 +4,8 @@ const lastMeasureTimes = [];
 console.log(sdk.CorsairPerformProtocolHandshake());
 
 const leds = sdk.CorsairGetLedPositions().map(led => ({ ledId: led.ledId, r: 0, g: 0, b: 0 }));
-
+console.log(sdk.CorsairGetLedsColors(leds));
+console.log(leds);
 function hue2rgb(p, q, t) {
   if (t < 0) t += 1;
   if (t > 1) t -= 1;
