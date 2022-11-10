@@ -15,7 +15,7 @@
     "cue-sdk": "^3.0.0"
   },
   "devDependencies": {
-    "electron": "^18.2.4",
+    "electron": "^18.3.7",
     "electron-builder": "^23.0.3",
     "yarn": "^1.22.18"
   }
